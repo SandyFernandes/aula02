@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+		<title>Form com BS</title>
+		<script src="aula10_ex2.js"></script>
+	</head>
+	<body onload="A()">
+		<div class="jumbotron container-fluid text-center"style="color:orange">
+			<h1>Bem vindo ao nosso formulário</h1>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3"> </div>
+				<div class="col-md-6" style="background: #000000">
+					<form class="form-horizontal" method="POST" action="aula10_ex3.html" name="formCadastro">
+						<div class="row form">
+							<div class="form-group col-md-6">
+								<label for="nome">Nome</label>
+								<input type="nome" class="form-control"  style="color:orange" id="nome" placeholder="Nome">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="email">E-mail</label>
+								<input style="color:orange" class="form-control" color="orange" id="email" placeholder="email"
+								onchange="camposInativos()">
+							</div>
+						</div>
+						<div class="form">
+							<div class="form-group">
+								<label for="endereco">Endereço</label>
+								<input type="" class="form-control" id="endereco" placeholder="Rua dos Alunos, nº 0E">
+							</div>
+							<div class="form-group">
+								<label for="bairro">Bairro</label>
+								<select id="bairro" class="form-control">
+									<option selected>Escolher...</option>
+									<option value="MG" >vida </option>
+									<option value="RJ" >nois</option>
+									<option value="EP" >coisa</option>
+									<option value="MT" >comida</option>
+									<option value="MS" > ceu</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="cidade">Cidade</label>
+								<select id="cidade" class="form-control">
+									<option selected>Escolher...</option>
+									<option value="MG" >Cambui</option>
+									<option value="RJ" >Nova iguaçu</option>
+									<option value="EP" >Fundao</option>
+									<option value="MT" >Sinop</option>
+									<option value="MS" >Bonito</option>
+								</select>
+							</div>
+						</div>
+						<div class="row form">
+							<div class="form-group col-md-6 text-center">
+								<a class="btn btn-primary"  role="button" style="width: 150px" onclick="validarFormulario()">Cadastrar</a>
+							</div>
+							<div class="form-group col-md-6 text-center">
+								<button type="reset" class="btn btn-dark" style="width: 150px">Limpar</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
